@@ -9,15 +9,13 @@ package com.example.higherorderfunctions
  */
 
 
-fun higherOrderFunExample(a : Int, b : Int, operation : (Int, Int) -> Int){
 
-    var operation = operation(a,b)
-    print(operation)
-
-}
 
 fun main(){
 
-    higherOrderFunExample(a = 5,b = 5) { a,b -> a * b }
+    higherOrderFunTwoInteger(a = 5,b = 5) { a,b -> a * b }
+
+    applyJustPrint(value = 5, operation = {it * 5})
+
 
 }
