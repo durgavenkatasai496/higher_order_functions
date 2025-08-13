@@ -5,11 +5,16 @@ package com.example.higherorderfunctions
 fun main(){
 
     //Unit
+    // Inside the Lambda Function
     doPrint(x = 2, y = 3, operation = {x,y ->
        println(x * y)
    })
 
-    //Int
+    //Unit Not return AnyThing
+    var doChecking = doPrint(x = 2, y = 4, operation = {x,y -> x -y})
+    println(doChecking)
+
+//    Int
    var output =  calculate(x = 2, y = 3, operation = {x,y -> x + y})
     println(output)
 
